@@ -1,0 +1,15 @@
+This script will assist with installation of OpenStack CLI clients (e.g. nova, glance) on the sample Ubuntu image that comes pre-installed with VMware Integrated OpenStack (VIO).
+
+It is advised to use this script to install the clients rather than performing a manual installation from public Ubuntu or Pypi repositories as this script will install the compatible versions shipped with VIO.
+
+USAGE:
+
+1. Make the installation script executable:
+
+    chmod +x install.sh
+
+2. Run the installation script with the IP address of the OMS server as the first argument. Note: You will need sudo permissions.:
+
+    ./install.sh <OMS IP>
+
+3. After the script has completed running, the OpenStack CLI commands will be available on your PATH.
